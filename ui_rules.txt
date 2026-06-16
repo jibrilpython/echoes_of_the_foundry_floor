@@ -1,0 +1,42 @@
+1. DESIGN PHILOSOPHY
+Visual: "Pattern Shop Drawing" — the UI draws from the visual language of the foundry pattern shop: the engineering drawings pinned above the workbench, the shrinkage ruler annotations in red pencil, the specimen tickets stapled to finished wooden patterns before they go to the floor. These were the most dimensionally precise wooden objects ever made — every surface accounting for metal's reluctance to stay the size it was poured. The app should feel like the drawing office and the pattern archive combined: warm wood tones in the palette, engineering precision in the layout, and the quiet authority of a craftsman's record book.
+Mood: foundry-serious, dimensional, pattern-precise, workshop-warm, industrially weighted.
+Important: No molten metal effects, no wood grain textures as backgrounds, no gear illustrations used decoratively. The wooden pattern is a precision instrument of dimensional engineering — the app catalogs it with the same analytical rigour as a metrology tool, not as a folk artifact. The craft is extraordinary; the interface is disciplined.
+
+2. COLORS
+#F5F0E8 — Main background (pattern wood white — the warm cream of a freshly planed jelutong pattern board, slightly darker and more amber than undyed fleece, lighter than wheat parchment)
+#1A1410 — Primary text & high-contrast elements (pattern shop black — warm, brown-tinted, like India ink on a working drawing)
+#FFFFFF — Secondary panels / card surfaces
+#7A7060 — Secondary text / muted labels (sand grey — warm, gritty, like the color of green sand molding compound)
+#8B4513 — Primary accent (pattern mahogany — the specific reddish-brown of the mahogany and cherry wood used for high-grade foundry patterns, darker and redder than the quarry umber in Shadows on the Quarry Wall, referencing the specific timber tradition of the pattern shop)
+#E6DFD2 — Outline / stroke / dividers (pattern board rule lines, warm amber-tinged)
+#4A6741 — Secondary accent (core box green — the institutional green of painted cast-iron core boxes and foundry floor equipment, a color as specific to foundry culture as signal green is to railways. For condition badges, era tags, and provenance indicators)
+#C0392B — Critical errors only
+Important: Pattern mahogany is darker and more specifically material than any other brown in the series — it is the color of the highest-grade pattern timber, and it should feel like a cross-section of wood, not a brand color. Core box green is the foundry floor's institutional color — every core box, every flask, every piece of painted foundry iron was this specific muted green. The background is amber-cream, sitting between wheat parchment and undyed fleece — the color of a pattern board that has absorbed one season of workshop dust.
+
+3. TYPOGRAPHY
+Display / Headings: Bitter (weight 700) — a slab serif designed for screen reading with the weight and squareness of industrial stencil lettering. At large sizes it references the stamped pattern numbers on wooden molds, the stenciled job numbers on foundry flasks, and the heavy type of an engineering catalogue from a major casting house. Used for pattern names, tool names on detail views, and the app title. Its slab serifs give it a dimensional, almost machined quality that no other serif in the series has.
+Body / Descriptions: IBM Plex Sans (weight 300–400) — engineered and neutral. For condition notes, foundry history, shrinkage allowance notes, and all prose fields.
+Monospace / Identifiers: IBM Plex Mono — for archive codes like EFF-SEGMENTED-GEAR-1891-GBR-BIRMINGHAM-FOUNDRY-022, shrinkage allowances (+3/16 in/ft), pattern draft angles (2°), and all structured technical fields.
+Important: Bitter at 24px and above only — its slab weight becomes heavy below that threshold. IBM Plex Sans carries all reading-size text. IBM Plex Mono for every shrinkage value, draft angle, and archive code — pattern dimensions were held to thousandths of an inch, and the typography should feel equally exacting.
+
+4. SURFACE & TEXTURE LANGUAGE
+
+Backgrounds: flat pattern board cream — no wood grain, no sand texture, no noise
+Cards: pure white with a 1px border at #E6DFD2 and 10px corner radius — foundry record cards, warm and weighted
+Pattern cross-section motif: each list card features a small SVG — a minimal top-down cross-section silhouette of the pattern type: a gear pattern shown as a toothed circle, a core box shown as a rectangular form with a semicircular void, a flask shown as a divided rectangle, a rammer shown as a T-bar profile. Rendered in pattern mahogany for complete and operational pieces, core box green for display-only condition. The cross-section convention references foundry drawing practice directly — patterns were always drawn in section, because the void they created was more important than their external form.
+Shrinkage allowance badge: each card shows the metal type and shrinkage in IBM Plex Mono — Cast iron +3/16"/ft, Bronze +3/32"/ft, Aluminium +1/8"/ft — in a small warm-bordered pill. The single most technically distinctive specification of any foundry pattern — two patterns for the same gear in different metals are different objects entirely.
+Photography: pattern photography on warm white — the parting face forward, the draft surfaces visible. For gear patterns, show the tooth form in three-quarter view. For core boxes, show the cavity open. No props, no sand in frame.
+Foundry provenance tag: small pill showing the originating foundry or casting house — Birmingham Grey Iron, Pittsburgh Malleable, Sheffield Steel Castings, Coventry Precision — in pattern mahogany at 12% opacity fill with full mahogany text
+
+
+5. INTERACTION PRINCIPLES
+
+Transitions: 200–240ms ease-out — deliberate and weighted, like a pattern being lifted cleanly from a rammed mold
+Selected state: pattern mahogany left-border (3px) + faint #F5EDE0 background tint on active cards
+Empty states: NO PATTERNS IN THIS FOUNDRY YET. in IBM Plex Mono, centered, sand grey — one line
+Loading: a thin pattern mahogany progress bar at screen top — warm and steady
+Navigation: bottom tab bar — four tabs: Foundry, Pattern Map, Logbook, Settings. Active tab in pattern mahogany.
+Cast metal filter: a first-class filter chip row — Grey iron, Malleable iron, Bronze, Brass, Aluminium, Steel — because the metal a pattern was designed to cast determines its shrinkage allowance, its draft angle, its timber species, and its entire dimensional logic. It is the primary axis of comparison for foundry historians and the first question any serious collector asks about a wooden pattern
+
+Important: The cross-section SVG on each card is the most technically precise motif in the series — it uses the same drawing convention that pattern makers themselves used. A gear pattern in cross-section is a toothed circle; a core box in cross-section is a rectangle with a void. The void is the point. Mahogany means the pattern is complete, dimensionally sound, and ready to produce a casting. Green means it lives in a display case. That distinction should feel as weighted as the patterns themselves — these objects were the first step in making the iron skeleton of industrial civilization.
